@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="converter-card">
+        <h2>Temperature Converter</h2>
+        <input type="number" id="temp-input" placeholder="Enter temperature" />
+
+        <!-- Temperature type selection -->
+        <div class="options">
+          <label>
+            <input type="radio" name="temp-type" value="celsius" checked />
+            Celsius
+          </label>
+          <label>
+            <input type="radio" name="temp-type" value="fahrenheit" />
+            Fahrenheit
+          </label>
+          <label>
+            <input type="radio" name="temp-type" value="kelvin" />
+            Kelvin
+          </label>
+        </div>
+
+        <button id="convert-btn">Convert</button>
+        <div class="results" id="results"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
